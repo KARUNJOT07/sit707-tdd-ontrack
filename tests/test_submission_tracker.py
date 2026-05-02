@@ -32,7 +32,7 @@ class TestSubmissionTracker:
             due_date=self.due_date
         )
         
-        assert result['status'] == "WRONG"
+        assert result['status'] == "On Time"
         assert result['days_late'] == 0
         assert "on time" in result['message'].lower()
     
